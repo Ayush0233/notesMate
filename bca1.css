@@ -1,0 +1,78 @@
+#navbar{
+    height: 7.5vh;
+}
+
+
+
+#navigator{
+  padding-top: calc(100vh - 92.5vh );
+  width: 25vw !important;
+  height: 100vh;
+  background-color: #ededed;
+  transition: all 0.5s;
+  transform:translateX(-1%);
+
+}
+#navigationPanelTop{
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 2%;
+}
+#navigationBtnOpen{
+  position: absolute;
+  right: -40px;
+  display: none;
+
+}
+.navigationSection{
+    box-shadow: 0 0 10px #0808084a;
+    height: 100vh;
+    padding: 0;
+    padding-top: calc(100vh - 92.5vh );
+    background: #fff3e56b;
+    
+}
+
+.navbar>.container-fluid{
+  /* background-color: red; */
+}
+.accordion-item{
+    /* width: 100% !important; */
+    border-radius: 0px !important;
+    
+}
+.accordion-button{
+    background: #fff3e56b !important; 
+    background-color: black;
+}
+.accordion-button:focus {
+    border-color: none !important;
+    box-shadow: none !important;
+    border-radius:0px !important;
+    background-color: #0072fdd6;
+    font-weight: 700;
+  }
+
+  .accordion-body ul{
+    padding-left: 4%;
+  }
+
+  .viewerSection{
+    padding-top: calc(100vh - 92.5vh );
+    height: 100vh;
+    overflow-y: auto;
+  }
+  .dropdown a{
+    padding: 0 5% 0 0;
+    white-space: wrap;
+    text-overflow: ellipsis;
+    overflow:hidden ;
+    
+}
+
+@media only screen and (max-width:700px){
+  #navigator{
+    width: 80vw !important;
+    position: absolute;
+  }
+}
