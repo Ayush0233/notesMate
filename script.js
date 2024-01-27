@@ -406,37 +406,4 @@ gsap.from("footer .links", {
 })
 
 
-// --------------fields html----------------
-// gsap.to("#fieldLoader", {
-//    top: "200vh",
-//    opacity:1,
-//    delay:0.3,
-//    duration:1.5,
-
-// })
-gsap.from(".fieldcards h1", {
-   scale: 0,
-   opacity: 0,
-   duration: 1,
-   delay: 1
-})
-
-
-
-// gsap.from(".fieldcards",{
-//    y:100,
-//    opacity:0,
-//    duration:1,
-//    stagger:0.2,
-// })
-// document.addEventListener("DOMContentLoaded", function() {
-//    const fieldCards = document.querySelectorAll(".fieldcards");
-//    console.log("Number of elements found:", fieldCards.length);
-
-//    gsap.from(fieldCards, {
-//        y: 100,
-//        opacity: 0,
-//        duration: 1,
-//        stagger: 0.2,
-//    });
-// });
+// -----------------------------------fielda html --------------------------------

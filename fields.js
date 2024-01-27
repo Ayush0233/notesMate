@@ -61,14 +61,9 @@ let nav = document.querySelector("#navbar");
  })
  gsap.from(".fieldcard ", {
     y: 100,
-    // scale:0,
     opacity: 0,
     duration: 1,
     stagger: 0.2,
-    // scrollTrigger:{
-    //    trigger:".fieldcards",
-    //    scroller:"body",
-    // }
  })
  gsap.from("footer .links", {
     scale: 0,

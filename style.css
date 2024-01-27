@@ -13,6 +13,10 @@ html, body {
     height: 100%;
     width: 100%;
 }
+
+#main{
+    padding: 0;
+}
 #cursor{
     width: 100px;
     height: 100px;
@@ -75,11 +79,10 @@ html, body {
     padding-right: 8% !important;
 }
 
-.navbar-brand h4 {
-    font-size: 30px;
-    font-family: jokerman;
-    color: #0f0e0e;
-    padding-left: 10%;
+.navbar-brand img {
+    width: 20vw;
+    height: 10vh;
+    padding-top: 3%;
 }
 
 #navbar {
@@ -169,7 +172,7 @@ html, body {
     height: 100vh;
     /* padding-top: 6%; */
     /* background: url(./elements/background.jpg) center center/cover; */
-    background: #dfdfdfe6;
+    background: #f3f3f3e6;
     overflow: hidden;
     position: relative;
 
@@ -225,7 +228,7 @@ html, body {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-color: #ff8000;
+    background-color: #c20000;
     font-weight:600;
     
 
@@ -235,7 +238,7 @@ html, body {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-color: #c70000;
+    background-color: #00c753;
     font-weight:800;
     
 
@@ -247,7 +250,7 @@ html, body {
 }
 .heading {
     color: #ff0000;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .welcome {
@@ -518,7 +521,7 @@ hr.new{
 }
 
 
-/* field html */
+/*------------------------------ field html------------------------------- */
 .cardsection {
     margin: 0;
     padding: 0 0 5%;
@@ -536,25 +539,43 @@ hr.new{
 #fieldcards {
     padding: 6% 0;
     width: 100% !important;
-    background: #8282824e;
+    background: #ffffffbd;
 }
 
 .fieldcards {
-    border: 1px solid black;
-    padding: 5% 7%;
+    /* border: 1px solid black; */
+    padding: 3% 5%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background: #0072bef0;
+    /* background: #0072bef0; */
     margin: 1% 0;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.135);
+    box-shadow: 0 0 10px rgba(76, 76, 76, 0.135);
     transition: all 0.2s;
     color: #dddddd;
+    position: relative;
     /* backdrop-filter: blur(10px); */
-    
+    overflow: hidden;
 
 }
+.fieldcards::after{
+    content: "";
+    width: 100%;
+    height: 100%; 
+    background-color: #009dabfb;
+    position: absolute;
+    bottom :-90%;
+    border-radius: 50%;
+    left:0px;
+
+    transition: all 0.3s;
+}
+.fieldcards:hover::after{
+    bottom: 0px;
+    border-radius: 0;
+}
+
 
 #fieldcards h1{
     font-family: Castellar;
@@ -573,27 +594,35 @@ hr.new{
     position: relative;
     top: 70px;
     transition: all 0.5s;
+    z-index: 9;
 
 }
 .fieldcards h4{
     font-family: Algerian;
-    color: #ef9d9d;
+    font-weight: 700;
+    color: #3c0303;
+    z-index: 9;
 }
 
-.fieldcards:hover {
+/* .fieldcards:hover {
     box-shadow: 0 0 30px #2e2c2c9e, inset 0px -50px 60px #0b15189b;
-    /* backdrop-filter: blur(10px); */
+    backdrop-filter: blur(10px);
     transform: scale(1.1);
-    /* inset 10px 10px 30px #02495dad */
-}
+    inset 10px 10px 30px #02495dad;
+} */
 
 .fieldcards:hover i {
     display: block;
     position: relative;
     top: 30px;
     opacity: 1;
+    
 }
-
+.fieldcards img{
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+}
 
 
 
