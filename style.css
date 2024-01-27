@@ -7,7 +7,7 @@
 
 *::selection{
     color: #000;
-    background: #fff;
+    background: #04f7d776;
 }
 html, body {
     height: 100%;
@@ -162,27 +162,39 @@ html, body {
 #navbar.scroll-on .navbar-brand h4 {
     color: #fff;
 }
-
+#intro>*{
+    padding: 0;
+}
 #intro {
     height: 100vh;
     /* padding-top: 6%; */
     /* background: url(./elements/background.jpg) center center/cover; */
-    background-attachment: fixed;
-    background: #e4e4e49e;
+    background: #dfdfdfe6;
+    overflow: hidden;
+    position: relative;
 
+}
+#intro video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: all 1s;
 }
 
 
-#welcometxt {
+#welcometxt{
     width: 100%;
     height: 100vh;
     font-family: Arial;
     padding: 6% 0 0 1%;
     color: #000000;
+    position: absolute;
     /* background: #313031cc; */
     overflow: hidden;
     text-align: center;
     cursor: none;
+    backdrop-filter: blur(5px);
 }
 
 #welcometxt h3 {

@@ -1,4 +1,5 @@
-let nav = document.querySelector("#navbar");
+function ScrollNavbar(){
+   let nav = document.querySelector("#navbar");
 window.onscroll = function () {
    if (document.documentElement.scrollTop > 120) {
       nav.classList.add("scroll-on");
@@ -7,6 +8,8 @@ window.onscroll = function () {
       nav.classList.remove("scroll-on");
    }
 }
+}
+ScrollNavbar();
 const scroll = new LocomotiveScroll({
    el: document.querySelector('#main'),
    smooth: true
@@ -62,6 +65,25 @@ purpose.addEventListener('mouseleave', function(dets){
 }
 MouseHover()
 
+function VideoPlayer(){
+   var VideoPlay = document.querySelector("#videoplay");
+   var Video = document.querySelector("#welcomeVideo");
+   var txt = document.querySelector("#welcometxt")
+
+   VideoPlay.addEventListener('mouseover', function(){
+         Video.style.opacity = 1;
+         txt.style.color = "#fff"
+   }
+   
+   )
+   VideoPlay.addEventListener('mouseleave', function(){
+      Video.style.opacity = 0;
+      txt.style.color = "#000"
+
+}
+   )
+}
+VideoPlayer()
 // function navigatorClose(){
 //    var navigationBTN = document.querySelector("#nagivationBTN")
 //    var navigator = document.querySelector("#navigator")
