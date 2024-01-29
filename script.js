@@ -10,6 +10,8 @@ window.onscroll = function () {
 }
 }
 ScrollNavbar();
+
+
 const scroll = new LocomotiveScroll({
    el: document.querySelector('#main'),
    smooth: true
@@ -84,44 +86,41 @@ function VideoPlayer(){
    )
 }
 VideoPlayer()
-// function navigatorClose(){
-//    var navigationBTN = document.querySelector("#nagivationBTN")
-//    var navigator = document.querySelector("#navigator")
-//    navigationBTN.addEventListener('click', function(){
-//       navigator.style.transform = 'translateX(-95%)'
-//    })
-//    console.log("navigator close")
-// }
 
-function navigatorClose() {
-   var navigator = document.querySelector("#navigator");
-   var navigationBTN = document.querySelector("#navigationBTN");
-   var navigationBtnOpen = document.querySelector("#navigationBtnOpen")
-
-   navigator.style.transform = 'translateX(-100%)';
-   navigationBTN.style.display = "none";
-   navigationBtnOpen.style.display = "block";
-   console.log("navigator close");
-}
-
-function navigatorOpen(){
-   var navigator = document.querySelector("#navigator");
-   var navigationBTN = document.querySelector("#navigationBTN");
-   var navigationBtnOpen = document.querySelector("#navigationBtnOpen")
-
-   navigator.style.transform = 'translateX(0%)';
-   navigationBtnOpen.style.display = "none";
-   navigationBTN.style.display = "block";
-   console.log("navigator close");
-}
-document.addEventListener('DOMContentLoaded', function () {
-   var navigationBTN = document.querySelector("#navigationBTN");
-   var navigationBtnOpen = document.querySelector("#navigationBtnOpen");
+function FieldsNavigationPanel(){
+   function navigatorClose() {
+      var navigator = document.querySelector("#navigator");
+      var navigationBTN = document.querySelector("#navigationBTN");
+      var navigationBtnOpen = document.querySelector("#navigationBtnOpen")
    
-   navigationBTN.addEventListener('click', navigatorClose());
-   navigationBtnOpen.addEventListener('click', navigatorOpen());
+      navigator.style.transform = 'translateX(-100%)';
+      navigationBTN.style.display = "none";
+      navigationBtnOpen.style.display = "block";
+      console.log("navigator close");
+   }
+   
+   function navigatorOpen(){
+      var navigator = document.querySelector("#navigator");
+      var navigationBTN = document.querySelector("#navigationBTN");
+      var navigationBtnOpen = document.querySelector("#navigationBtnOpen")
+   
+      navigator.style.transform = 'translateX(0%)';
+      navigationBtnOpen.style.display = "none";
+      navigationBTN.style.display = "block";
+      console.log("navigator close");
+   }
+   document.addEventListener('DOMContentLoaded', function () {
+      var navigationBTN = document.querySelector("#navigationBTN");
+      var navigationBtnOpen = document.querySelector("#navigationBtnOpen");
+      
+      navigationBTN.addEventListener('click', navigatorClose());
+      navigationBtnOpen.addEventListener('click', navigatorOpen());
+   
+   });
+ FieldsNavigationPanel();   
+}
 
-});
+
 
 
 
@@ -244,7 +243,7 @@ tl.from(".btn", {
 })
 
 gsap.to("#welcometxt h1",{
-   transform:"translateX(-120%)",
+   transform:"translateX(-110%)",
     fontWeight:"100",
     scrollTrigger:{
         trigger:"#welcometxt",

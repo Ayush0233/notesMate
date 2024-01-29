@@ -1,8 +1,12 @@
+@font-face {
+    font-family: ayush;
+    src: url(./elements/HouschkaRoundedAlt-Medium.ttf);
+}
 * {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
-    font-family: arial;
+    font-family: ayush;
 }
 
 *::selection{
@@ -177,13 +181,6 @@ html, body {
     position: relative;
 
 }
-#intro video{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0;
-    transition: all 1s;
-}
 
 
 #welcometxt{
@@ -212,6 +209,7 @@ html, body {
     color: #fff;
     font-size: 60px; */
     /* width: 70vw !important; */
+    margin-left: 2%;
     font-size: 18vw;
     color: #080808;
     text-transform: uppercase;
@@ -237,6 +235,7 @@ html, body {
     background: url("https://lagunitas.com/wp-content/themes/lagunitas/assets/images/texture.png") center center/cover;
     background-clip: text;
     -webkit-background-clip: text;
+    font-family: arial !important;
     -webkit-text-fill-color: transparent;
     background-color: #00c753;
     font-weight:800;
@@ -245,8 +244,9 @@ html, body {
  }
 
 #welcometxt p{
-    margin-top: 1%;
+    margin-top: 2%;
     font-size: 20px;
+    font-weight: 600;
 }
 .heading {
     color: #ff0000;
@@ -376,6 +376,7 @@ html, body {
     display: flex;
     padding: 2% 0;
     white-space: nowrap;
+    overflow: hidden;
     /* gap: 30px; */
     
 }
@@ -451,7 +452,7 @@ html, body {
     margin: 0;
     padding: 0;
     color: #b8b8b8;
-    background-color: #1b1212;
+    background: #1b1212;
 }
 .footer{
     margin-right: 0 !important;
@@ -534,24 +535,30 @@ hr.new{
 #field {
     /* width: 100vw !important; */
     padding: 0;
+    
 }
 
-#fieldcards {
-    padding: 6% 0;
+#fieldcards{
+    padding: 5% 0;
     width: 100% !important;
-    background: #ffffffbd;
-}
+    top: 0;
+    backdrop-filter: blur(3px);
 
+    /* background: #ffffffbd; */
+}
+.fieldcard{
+    padding: 1% 8%;
+}
 .fieldcards {
     /* border: 1px solid black; */
-    padding: 3% 5%;
+    padding: 2% 5%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    /* background: #0072bef0; */
-    margin: 1% 0;
-    box-shadow: 0 0 10px rgba(76, 76, 76, 0.135);
+    background: #d8d8d8f0;
+    margin: 3% 0;
+    /* box-shadow: 0 0 10px rgba(76, 76, 76, 0.135); */
     transition: all 0.2s;
     color: #dddddd;
     position: relative;
@@ -563,7 +570,7 @@ hr.new{
     content: "";
     width: 100%;
     height: 100%; 
-    background-color: #009dabfb;
+    background-color: #009fc7fb;
     position: absolute;
     bottom :-90%;
     border-radius: 50%;
@@ -574,12 +581,14 @@ hr.new{
 .fieldcards:hover::after{
     bottom: 0px;
     border-radius: 0;
+    box-shadow: inset 8px 8px 8px rgba(0, 0, 0, 0.318);
 }
 
 
 #fieldcards h1{
-    font-family: Castellar;
-    color: #ff006f;
+    font-family: ayush;
+    letter-spacing: 2px;
+    color: #ff83b9;
     font-weight: bold;
     transition: all 0.3s;
 }
@@ -589,16 +598,16 @@ hr.new{
 
 .fieldcards i {
     font-size: 30px;
-    color: #dde1e1;
-    opacity: 0;
+    color: #cc005f;
+    /* opacity: 0; */
     position: relative;
-    top: 70px;
+    /* top: 70px; */
     transition: all 0.5s;
     z-index: 9;
 
 }
 .fieldcards h4{
-    font-family: Algerian;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
     color: #3c0303;
     z-index: 9;
@@ -611,13 +620,13 @@ hr.new{
     inset 10px 10px 30px #02495dad;
 } */
 
-.fieldcards:hover i {
+/* .fieldcards:hover i {
     display: block;
     position: relative;
     top: 30px;
     opacity: 1;
     
-}
+} */
 .fieldcards img{
     width: 100%;
     height: 100%;

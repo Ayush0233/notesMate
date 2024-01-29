@@ -69,7 +69,9 @@
     overflow:hidden ;
     
 }
-
+.collapse-container{
+  overflow: hidden;
+}
 @media only screen and (max-width:700px){
   #navigator{
     width: 80vw !important;
