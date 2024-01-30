@@ -119,6 +119,36 @@ VideoPlayer()
    });
 
 
+   function YoutubeNavigatorOpen() {
+      var youtubeLinks = document.querySelector("#youtubeLinks");
+      var YoutubeNavigatorOpen = document.querySelector("#YoutubeNavigatorOpen");
+      var YoutubeNavigatorClose = document.querySelector("#YoutubeNavigatorClose")
+      
+      youtubeLinks.style.transform = 'translateX(0%)';
+      YoutubeNavigatorClose.style.display = "block";
+      YoutubeNavigatorOpen.style.display = "none";
+      console.log("navigator open");
+   }
+   
+   function YoutubeNavigatorClose(){
+      var youtubeLinks = document.querySelector("#youtubeLinks");
+      var YoutubeNavigatorClose = document.querySelector("#YoutubeNavigatorClose");
+      var YoutubeNavigatorOpen = document.querySelector("#YoutubeNavigatorOpen")
+      
+      youtubeLinks.style.transform = 'translateX(100%)';
+      YoutubeNavigatorOpen.style.display = "block";
+      YoutubeNavigatorClose.style.display = "none";
+      console.log("navigator close");
+   }
+   document.addEventListener('DOMContentLoaded', function () {
+      var YoutubeNavigatorClose = document.querySelector("#YoutubeNavigatorClose");
+      var YoutubeNavigatorOpen = document.querySelector("#YoutubeNavigatorOpen");
+      
+      YoutubeNavigatorClose.addEventListener('click', YoutubeNavigatorClose());
+      YoutubeNavigatorOpen.addEventListener('click', YoutubeNavigatorOpen());
+      
+   });
+
 
 
 
