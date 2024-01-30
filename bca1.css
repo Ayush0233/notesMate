@@ -1,3 +1,8 @@
+/* *{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+} */
 #navbar{
     height: 7.5vh;
 }
@@ -8,15 +13,20 @@
   padding-top: calc(100vh - 92.5vh );
   width: 25vw !important;
   height: 100vh;
-  background-color: #ededed;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 10px #0000005d;
   transition: all 0.5s;
   transform:translateX(-1%);
+  position: relative;
 
 }
 #navigationPanelTop{
   display: flex;
   justify-content: flex-end;
   margin-bottom: 2%;
+}
+#navigationBtn{
+  border: none !important;
 }
 #navigationBtnOpen{
   position: absolute;
@@ -28,6 +38,7 @@
     box-shadow: 0 0 10px #0808084a;
     height: 100vh;
     padding: 0;
+    position: absolute;
     padding-top: calc(100vh - 92.5vh );
     background: #fff3e56b;
     
@@ -42,7 +53,7 @@
     
 }
 .accordion-button{
-    background: #fff3e56b !important; 
+    background: #c100008a !important; 
     background-color: black;
 }
 .accordion-button:focus {
@@ -61,6 +72,7 @@
     padding-top: calc(100vh - 92.5vh );
     height: 100vh;
     overflow-y: auto;
+    background-color: #e0e0e077;
   }
   .dropdown a{
     padding: 0 5% 0 0;
@@ -71,6 +83,13 @@
 }
 .collapse-container{
   overflow: hidden;
+}
+
+#youtubeLinks{
+  height: 100vh;
+  background-color: #fff;
+  box-shadow: -2px 0px 10px black;
+  
 }
 @media only screen and (max-width:700px){
   #navigator{

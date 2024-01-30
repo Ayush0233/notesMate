@@ -87,12 +87,12 @@ function VideoPlayer(){
 }
 VideoPlayer()
 
-function FieldsNavigationPanel(){
+
    function navigatorClose() {
       var navigator = document.querySelector("#navigator");
       var navigationBTN = document.querySelector("#navigationBTN");
       var navigationBtnOpen = document.querySelector("#navigationBtnOpen")
-   
+      
       navigator.style.transform = 'translateX(-100%)';
       navigationBTN.style.display = "none";
       navigationBtnOpen.style.display = "block";
@@ -103,7 +103,7 @@ function FieldsNavigationPanel(){
       var navigator = document.querySelector("#navigator");
       var navigationBTN = document.querySelector("#navigationBTN");
       var navigationBtnOpen = document.querySelector("#navigationBtnOpen")
-   
+      
       navigator.style.transform = 'translateX(0%)';
       navigationBtnOpen.style.display = "none";
       navigationBTN.style.display = "block";
@@ -115,10 +115,9 @@ function FieldsNavigationPanel(){
       
       navigationBTN.addEventListener('click', navigatorClose());
       navigationBtnOpen.addEventListener('click', navigatorOpen());
-   
+      
    });
- FieldsNavigationPanel();   
-}
+
 
 
 
