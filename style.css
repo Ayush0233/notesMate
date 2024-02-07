@@ -19,12 +19,28 @@ html,
 body {
     height: 100%;
     width: 100%;
+    
 }
 
 #main {
     padding: 0;
+    position: relative;
+    /* overflow: hidden; */
 }
 
+.background{
+    background: url(./elements/container-image1.jpg) center center/cover;
+    background-attachment: fixed;
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+
+}
+#containerVideo{
+    position: fixed ;
+    
+}
 #cursor {
     width: 100px;
     height: 100px;
@@ -37,7 +53,7 @@ body {
     border-radius: 50%;
     position: fixed;
     z-index: 99;
-    background-color: #3232325d;
+    /* background-color: #3232325d; */
     /* box-shadow: 0 0 40px 10px #fbee01ae;  */
     opacity: 0;
     scale: 0;
@@ -48,12 +64,13 @@ body {
 #loader {
     height: 100vh;
     width: 100%;
-    background: #90ff9b;
+    background: #462400;
     display: flex;
     justify-content: center;
     align-items: center;
     position: fixed;
     z-index: 999;
+   
 }
 
 #loader h1 {
@@ -73,9 +90,11 @@ body {
     z-index: 999;
 }
 
+
 .navbar {
     /* background: linear-gradient(to bottom, #bd8100, #8e6100) !important; */
     background: none !important;
+    /* display: none; */
     /* backdrop-filter: blur(3px); */
     height: 8vh;
     z-index: 5;
@@ -185,7 +204,8 @@ body {
     height: 100vh;
     /* padding-top: 6%; */
     /* background: url(./elements/background.jpg) center center/cover; */
-    background: #f3f3f3e6;
+    background: #f3f3f3ce;
+    /* background: transparent; */
     overflow: hidden;
     position: relative;
 
@@ -215,6 +235,8 @@ body {
     letter-spacing: 1px;
     font-weight: bold;
     font-size: 20px;
+    text-shadow: 5px 5px 10px 20px #000000b1 !important;
+
 }
 
 #welcometxt h1 {
@@ -229,8 +251,8 @@ body {
     text-transform: uppercase;
     font-family: Arial;
     white-space: nowrap;
-    background-clip: text;
-    -webkit-background-clip: text;
+    /* transform: rotateX(270deg);
+    transform-origin: left bottom; */
     /* font-weight:600; */
 
 
@@ -242,6 +264,8 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-color: #c20000;
+    text-shadow:20px 0px 30px #0000007f ;
+    /* text-shadow: none    ; */
     font-weight: 600;
 
 
@@ -316,7 +340,21 @@ body {
     position: relative;
 
 }
-
+/* #canvasDiv{
+    position: relative;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    
+    padding: 0 !important;
+} */
+/* 
+#canvasDiv canvas{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    mix-blend-mode: difference;
+} */
 
 #EasyLearning>* {
     padding: 0% !important;
@@ -446,6 +484,7 @@ body {
     text-align: center;
     z-index: 5;
 }
+
 
 #purpose h5 {
     word-spacing: 2px;
@@ -598,6 +637,7 @@ hr.new {
     position: relative;
     /* backdrop-filter: blur(10px); */
     overflow: hidden;
+    box-shadow:  4px 4px 8px rgba(0, 0, 0, 0.407)
 
 }
 
@@ -605,7 +645,7 @@ hr.new {
     content: "";
     width: 100%;
     height: 100%;
-    background-color: #009fc7fb;
+    background-color: #6304c2;
     position: absolute;
     bottom: -90%;
     border-radius: 50%;
@@ -617,7 +657,7 @@ hr.new {
 .fieldcards:hover::after {
     bottom: 0px;
     border-radius: 0;
-    box-shadow: inset 8px 8px 8px rgba(0, 0, 0, 0.318);
+    /* box-shadow: inset 8px 8px 8px rgba(0, 0, 0, 0.318); */
 }
 
 
@@ -786,9 +826,7 @@ hr.new {
 
 }
 
-.navbar>.container-fluid {
-    /* background-color: red; */
-}
+/*  */
 
 .accordion-item {
     /* width: 100% !important; */
@@ -818,6 +856,13 @@ hr.new {
     height: 100vh;
     overflow-y: auto;
     background-color: #e0e0e077;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.viewerSection iframe{
+    width: 100%;
+    height: 100%;
 }
 
 .dropdown a {
@@ -845,6 +890,30 @@ hr.new {
     display: none;
     left: -11vw;
 }
-#YoutubeNavigatorClose{
-
+#youtubeDiv{
+    width: 100%;
+    position: relative;
+    padding: 0 6%;
 }
+#youtubeDiv iframe{
+    margin-top: 2vh;
+    width: 100%;
+    height: 25vh;
+}
+/* ---------------------------------------------------------About Heading---------------------------------------------------- */
+.aboutHeading{
+    width: 100%;
+}
+
+#Aboutloader {
+    height: 100vh;
+    width: 100%;
+    background: #ab0014;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 999;
+   
+}
+container-fluid
