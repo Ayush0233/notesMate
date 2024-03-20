@@ -126,7 +126,12 @@ body {
     font-size: 18px;
 
 }
-
+.JoinBtn{
+    width: 5vw;
+    padding: 2% 3%;
+    font-size: 1vw;
+    margin-top: 2%;
+}
 .nav-link {
     color: #1b1919cb;
     font-weight: bold;
@@ -785,6 +790,7 @@ hr.new {
 
 #field{
     overflow: hidden;
+    position: relative;
 }
 
 #navigator {
@@ -894,11 +900,33 @@ hr.new {
     width: 100%;
     position: relative;
     padding: 0 6%;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 #youtubeDiv iframe{
     margin-top: 2vh;
     width: 100%;
     height: 25vh;
+}
+
+#notesRefrence{
+    width: 100%;
+    height: 40%;
+    border: 1px solid black;
+    position: absolute;
+    bottom: 0;
+    padding:0 1%;
+    /* margin: 2% 3%; */
+    z-index:999;
+    display: flex;
+    align-items: center;
+}
+#notesRefrence textarea{
+    max-width: 100%;
+    max-height: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    padding: 2%;
 }
 /* ---------------------------------------------------------About Heading---------------------------------------------------- */
 .aboutHeading{
@@ -916,4 +944,3 @@ hr.new {
     z-index: 999;
    
 }
-container-fluid
